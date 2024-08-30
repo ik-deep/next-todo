@@ -1,0 +1,71 @@
+/* Reset some default browser styles */
+/* form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  } */
+  
+  /* Style for form sections */
+  div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .input-filds,
+  textarea
+   {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical; /* Allows vertical resizing only */
+    height: 13rem !important;
+  }
+  
+  .submit-btn {
+    background-color: #383636;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #1b1b1c;
+  }
+  
+  .submit-btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .title-detail{
+    width: 80%;
+  }
+  

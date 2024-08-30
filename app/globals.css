@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #eeeee4;
+  position: relative;;
+}
+
+.main {
+  padding: 1rem 4rem .5rem 4rem;
+  min-width: 350px;
+  position: relative;
+  /* height:80vh; */
+
+}
+.search-class{
+  background-color: white;
+}
+
+.details {
+  width: 55%;
+  height: 80vh;
+  position: relative;
+ 
+  /* overflow-y: scroll; */
+}
+.todo-list-visibility {
+  display: block !important;
+  width: 45%;
+  height: 80vh;
+
+}
+.info-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    display: block !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    width: 100% !important;
+    overflow-y: scroll !important;
+    height: 100% !important;
+  }
+
+  .todo-list-visibility {
+    display: none !important;
+    
+  
+  }
+  .search-class, .search-class input,  .li-tag {
+    background-color: #c9c9c5;
+  }
+
+  .todo-details-media {
+    width: 100%;
+    /* position: absolute;
+    top: 1rem;
+    right: 1rem; */
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .main {
+    padding: 1rem;
+   
+  }
+
+  .details {
+    min-width: 315px;
+    
+  }
+
+}

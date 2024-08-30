@@ -1,0 +1,14 @@
+import Link from "next/link";
+import { FaArrowLeftLong } from "react-icons/fa6";
+export default function BackButton (){
+
+    return (
+        <>
+        <Link href="/todoList">
+            <h1 className="font-bold absolute flex items-center gap-1 cursor-pointer" style={{top:'-27px'}}>
+               <FaArrowLeftLong/> BACK
+            </h1>
+        </Link>
+        </>
+    )
+}
