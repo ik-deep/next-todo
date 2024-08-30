@@ -72,7 +72,7 @@ export default function TodoDetails({ id }) {
         listStyleType:listType
     }
 
-window.addEventListener("resize", handleResize);
+// window.addEventListener("resize", handleResize);
     return (
         <div>
             {

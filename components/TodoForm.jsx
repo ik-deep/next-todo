@@ -31,7 +31,7 @@ export default function TodoForm(){
     handleResize();
   },[])
 
-  window.addEventListener("resize", handleResize);
+  // window.addEventListener("resize", handleResize);
 
   const handleSubmit = async (event) => {
     event.preventDefault();
