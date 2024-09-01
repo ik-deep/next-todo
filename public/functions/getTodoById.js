@@ -1,4 +1,4 @@
-export default async function getTodoById (id){
+export default async function getTodoById(id) {
     try {
         const res = await fetch(`http://localhost:3000/api/todos/${id}`, {
             cache: "no-store",

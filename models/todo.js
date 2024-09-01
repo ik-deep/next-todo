@@ -1,4 +1,4 @@
-import mongoose, {Schema} from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 const todoSchema = new Schema(
     {
@@ -10,10 +10,10 @@ const todoSchema = new Schema(
         text_underline: String,
         text_color: String,
         list_type: String
-    
+
     },
     {
-        timestamps:true,
+        timestamps: true,
     }
 );
 

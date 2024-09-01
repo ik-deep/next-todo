@@ -1,34 +1,36 @@
 
 
-export default async function updateTodo(newTitle,newDescription, text_align,
+export default async function updateTodo(title, description, text_align,
     font_weight,
     font_style,
     text_underline,
     text_color,
-    list_type,id,router){
-   
-    try{
-        const res =  await fetch(`http://localhost:3000/api/todos/${id}`,{
-            method:"PUT",
-            headers:{
-                "Content-type":"application/json",
+    list_type, id, router) {
+
+    try {
+        const res = await fetch(`http://localhost:3000/api/todos/${id}`, {
+            method: "PUT",
+            headers: {
+                "Content-type": "application/json",
             },
-            body:JSON.stringify({newTitle,newDescription, text_align,
+            body: JSON.stringify({
+                title, description, text_align,
                 font_weight,
                 font_style,
                 text_underline,
                 text_color,
-                list_type})
+                list_type
+            })
         });
-     
-        if(!res.ok){
+
+        if (!res.ok) {
             throw new Error("Failed to update todo");
         }
-        
+
         window.location.reload();
         alert("Todo updated successfully!")
-        router.refresh();
-    }catch (error){
+        // router.refresh();
+    } catch (error) {
         console.log(error)
     }
 }

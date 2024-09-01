@@ -12,7 +12,7 @@ export async function PUT(request, {params}){
         text_underline,
         text_color,
         list_type} = await request.json();
-    //  console.log("=======================",textProperties);
+
      await connectMongoDB();
      await Todo.findByIdAndUpdate(id,{title,description,
         text_align,
@@ -26,7 +26,7 @@ export async function PUT(request, {params}){
 
 }
 
-export async function GET(request, {params}){
+export async function GET(request,{params}){
     const {id} = params;
     await connectMongoDB();
     const todo = await Todo.findOne({_id:id});

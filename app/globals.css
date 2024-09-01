@@ -6,7 +6,12 @@ body {
   background-color: #eeeee4;
   position: relative;;
 }
-
+.search-class {
+  max-width: 150px;
+}
+.search-class input {
+  max-width: 100px;
+}
 .main {
   padding: 1rem 4rem .5rem 4rem;
   min-width: 350px;
@@ -20,22 +25,27 @@ body {
 
 .details {
   width: 55%;
-  height: 80vh;
+  height: 78vh;
+  margin-top: 1rem;
   position: relative;
- 
+  border: 2px solid black;
+ overflow: hidden;
   /* overflow-y: scroll; */
 }
 .todo-list-visibility {
   display: block !important;
   width: 45%;
   height: 80vh;
+  overflow: hidden;
 
 }
 .info-page{
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: x-large;
+}
+.back-btn{
+  display: none;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -45,10 +55,12 @@ body {
     justify-content: center;
     align-items: center;
   }
-
+.back-btn{
+  display: block;
+}
   .container {
     width: 100% !important;
-    overflow-y: scroll !important;
+    padding: 0px !important;
     height: 100% !important;
   }
 
@@ -58,15 +70,13 @@ body {
   
   }
   .search-class, .search-class input,  .li-tag {
-    background-color: #c9c9c5;
+    background-color: #e8e8e8;
   }
 
   .todo-details-media {
     width: 100%;
-    /* position: absolute;
-    top: 1rem;
-    right: 1rem; */
   }
+  
 }
 
 
@@ -80,5 +90,18 @@ body {
     min-width: 315px;
     
   }
+ 
 
+}
+
+
+.pagination-component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 2.5rem; */
+}
+.css-uy1rco-MuiPagination-root .MuiPaginationItem-text:hover{
+  background-color: black;
+  transition: all 0.3s;
 }

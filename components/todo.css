@@ -1,40 +1,38 @@
 .container {
-    width: 95% ;
-    overflow-y:scroll;
-    height: 80vh;
+  width: 95%;
+  height: 75vh;
+  padding: 1.2rem;
 }
-  ul{
-    list-style: none;
-  }
-  
-  ul li {
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    margin-bottom: 10px;
-   
-    padding: 10px 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  ul li:hover {
-    background-color: #f9f9f9;
-    border: 1px solid #100f0f;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  ul li .todo-title {
-    font-weight: bold;
-    font-size: 16px;
-    color: #333;
-    width: 60%;
-  }
-  
-  ul li .todo-description {
-    font-size: 14px;
-    color: #666;
-    margin-top: 5px;
-  }
-  
-  
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 2px;
+  padding: 1px 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #f9f9f9;
+  border: 1px solid #100f0f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul li .todo-title {
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  width: 60%;
+}
+
+ul li .todo-description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
